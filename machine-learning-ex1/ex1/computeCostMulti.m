@@ -14,7 +14,10 @@ J = 0;
 %               You should set J to the cost.
 
 
-
+prediction_vector =  X * theta 
+error_vector = prediction_vector - y
+squre_error_vector = error_vector .^ 2
+J = 1 / (2 * m) * sum(squre_error_vector)
 
 
 % =========================================================================

@@ -18,5 +18,8 @@ J = 0;
 
 
 % =========================================================================
-
+prediction_vector =  X * theta 
+error_vector = prediction_vector - y
+squre_error_vector = error_vector .^ 2
+J = 1 / (2 * m) * sum(squre_error_vector)
 end
