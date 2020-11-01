@@ -21,7 +21,6 @@ p = zeros(size(X, 1), 1);
 %       information see 'help max'. If your examples are in rows, then, you
 %       can use max(A, [], 2) to obtain the max for each row.
 %
-disp('x values'), disp(size(X));
 % a(0) = X (which is the input node)
 % z(2) which is the first node
 % z(2)= thetha1 * a(0) or thetha1 * X
@@ -39,7 +38,7 @@ a_3 = sigmoid(z_3);
 % this will give an array of size(X,1) X num_labels, and p will
 % tell the position of the maximum value
 
-[x, p] = max(a_3, [] , 2)
+[x, p] = max(a_3, [] , 2);
 
 
 % =========================================================================
